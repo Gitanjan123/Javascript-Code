@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Light Bulb On/Off with sound
+        </title>
+        <link rel="stylesheet0" href="style.css">
+    </head>
+    <body>
+        <div class="light">
+            <div class="wire"></div>
+         <div class="bulb"></div>  
+         <span></span>
+         <span></span> 
+        </div>
+        <div class="switch">
+           <div class="btn"></div>
+        </div>
+        <!--add sound on click-->
+        <audio id="audio" src="click.mp3" autostart="false"></audio>
+        <script>
+            let btn = document.querySelector('.btn');
+            let body = document.querySelector('body');
+            let audio = document.querySelector('#audio');
+            btn.onClick=function()
+            {
+                body.classList.toggle('on');
+                audio
+            }
+        </script>
+    </body>
+</html>
